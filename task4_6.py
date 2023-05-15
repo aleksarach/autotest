@@ -4,9 +4,6 @@
 # (1, 2, 3, 4, 5, 6, 7, 8, 9, 0)  => "(123) 456-7890"
 
 def create_phone_number(lst):
-
-#>>> name = 'Fred'
-#>>> f'He said his name is {name!r}.'
     str_from_lst = ''.join(str(i) for i in lst)
     return f'({str_from_lst[:3]}) {str_from_lst[3:6]}-{str_from_lst[6:]}'
 
