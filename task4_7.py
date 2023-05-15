@@ -4,7 +4,7 @@
 
 def move_zeros(lst):
     zero_lst = [i for i in lst if i == 0]
-    not_zero_lst = [i for i in lst if i > 0]
+    not_zero_lst = [i for i in lst if i != 0]
     return not_zero_lst + zero_lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
